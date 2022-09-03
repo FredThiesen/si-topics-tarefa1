@@ -12,6 +12,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-y: scroll;
 }
 .container {
 	display: flex;
@@ -41,4 +42,14 @@ body {
 	display: flex;
 	margin-top: 10px;
 	flex-direction: column;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+	body {
+		height: auto;
+	}
+	.container {
+		flex-direction: column;
+	}
 }

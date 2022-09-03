@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<!-- Container geral -->
@@ -13,7 +14,7 @@
 			<!-- Form esquerda -->
 			<div class="wrapper-form">
 				<h2>Efetuar registros</h2>
-				<form action="#">
+				<form action="#" id="form-dados-esquerda">
 					<ul>
 						<li>
 							<div class="wrapper-input-row">
@@ -82,20 +83,20 @@
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="municipioOrigem"
+								<label for="municipio-origem"
 									>Município de Origem</label
 								>
 								<input
 									type="text"
-									name="municipioOrigem"
-									id="municipioOrigem"
+									name="municipio-origem"
+									id="municipio-origem"
 								/>
 							</div>
 						</li>
 					</ul>
 
-					<input type="reset" value="Cancelar" />
-					<input type="submit" value="Gravar" onsubmit="()=>null" />
+					<input type="reset" value="Cancelar" id="reset" />
+					<input type="submit" value="Gravar" id="submit" />
 				</form>
 			</div>
 			<!-- Fim Form esquerda -->
@@ -103,58 +104,62 @@
 			<!-- Form direita -->
 			<div class="wrapper-form">
 				<h2>Dados</h2>
-				<form action="">
+				<form action="" id="form-dados-direita">
 					<ul>
 						<li>
 							<div class="wrapper-input-row">
 								<div class="wrapper-input-name">
-									<label for="nome">Nome</label>
+									<label for="dado-nome">Nome</label>
 									<input
 										readonly
 										type="text"
-										name="nome"
-										id="nome"
+										name="dado-nome"
+										id="dado-nome"
 									/>
 								</div>
 								<div class="wrapper-input">
-									<label for="data-nascimento"
+									<label for="dado-data-nascimento"
 										>Data de nascimento</label
 									>
 									<input
 										readonly
 										type="date"
-										name="data-nascimento"
-										id="data-nascimento"
+										name="dado-data-nascimento"
+										id="dado-data-nascimento"
 									/>
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="email">Email</label>
+								<label for="dado-email">Email</label>
 								<input
 									readonly
 									type="email"
-									name="email"
-									id="email"
+									name="dado-email"
+									id="dado-email"
 								/>
 							</div>
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="senha">Senha</label>
+								<label for="dado-senha">Senha</label>
 								<input
 									readonly
 									type="password"
-									name="senha"
-									id="senha"
+									name="dado-senha"
+									id="dado-senha"
 								/>
 							</div>
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="sexo">Sexo</label>
-								<select name="sexo" id="sexo" readonly>
+								<label for="dado-sexo">Sexo</label>
+								<select
+									name="dado-sexo"
+									id="dado-sexo"
+									readonly
+								>
 									<option value="masculino">Masculino</option>
 									<option value="feminino">Feminino</option>
 									<option value="outro">Outro</option>
@@ -163,21 +168,25 @@
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="tel-residencial"
+								<label for="dado-tel-residencial"
 									>Telefone Residencial</label
 								>
 								<input
 									readonly
 									type="tel"
-									name="tel-residencial"
-									id="tel-residencial"
+									name="dado-tel-residencial"
+									id="dado-tel-residencial"
 								/>
 							</div>
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="fumante">Fumante</label>
-								<select readonly name="fumante" id="fumante">
+								<label for="dado-fumante">Fumante</label>
+								<select
+									readonly
+									name="dado-fumante"
+									id="dado-fumante"
+								>
 									<option value="sim">Sim</option>
 									<option value="nao">Não</option>
 								</select>
@@ -185,20 +194,20 @@
 						</li>
 						<li>
 							<div class="wrapper-input">
-								<label for="municipioOrigem"
+								<label for="dado-municipio-origem"
 									>Município de Origem</label
 								>
 								<input
 									readonly
 									type="text"
-									name="municipioOrigem"
-									id="municipioOrigem"
+									name="dado-municipio-origem"
+									id="dado-municipio-origem"
 								/>
 							</div>
 						</li>
 					</ul>
 
-					<input type="reset" value="Limpar" />
+					<input type="reset" value="Limpar" id="dado-reset" />
 				</form>
 			</div>
 			<!-- Fim Form direita -->
