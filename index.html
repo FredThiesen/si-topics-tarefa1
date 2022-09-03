@@ -1,65 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br" style="height: 100vh; width: 100vw; padding: 0; margin: 0">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body
-		style="
-			height: 100%;
-			width: 100%;
-			padding: 0;
-			margin: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		"
-	>
+	<body>
 		<!-- Container geral -->
-		<div
-			style="
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-				margin: 10px;
-				align-self: center;
-			"
-		>
+		<div class="container">
 			<!-- Form esquerda -->
-			<div style="border: 1px solid black; padding: 20px">
+			<div class="wrapper-form">
 				<h2>Efetuar registros</h2>
 				<form action="#" method="post">
 					<ul>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: row;
-									align-items: center;
-								"
-							>
-								<div
-									style="
-										display: flex;
-										margin-top: 10px;
-										margin-right: 25px;
-										flex-direction: column;
-									"
-								>
+							<div class="wrapper-input-row">
+								<div class="wrapper-input-name">
 									<label for="nome">Nome</label>
 									<input type="text" name="nome" id="nome" />
 								</div>
-								<div
-									style="
-										display: flex;
-										margin-top: 10px;
-										flex-direction: column;
-									"
-								>
+								<div class="wrapper-input">
 									<label for="data-nascimento"
 										>Data de nascimento</label
 									>
@@ -72,25 +34,13 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="email">Email</label>
 								<input type="email" name="email" id="email" />
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="senha">Senha</label>
 								<input
 									type="password"
@@ -100,13 +50,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="sexo">Sexo</label>
 								<select name="sexo" id="sexo">
 									<option value="masculino">Masculino</option>
@@ -116,13 +60,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="tel-residencial"
 									>Telefone Residencial</label
 								>
@@ -134,13 +72,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="fumante">Fumante</label>
 								<select name="fumante" id="fumante">
 									<option value="sim">Sim</option>
@@ -149,13 +81,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="municipioOrigem"
 									>Município de Origem</label
 								>
@@ -175,26 +101,13 @@
 			<!-- Fim Form esquerda -->
 
 			<!-- Form direita -->
-			<div style="border: 1px solid black; padding: 20px">
+			<div class="wrapper-form">
 				<h2>Dados</h2>
 				<form action="" method="post">
 					<ul>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: row;
-									align-items: center;
-								"
-							>
-								<div
-									style="
-										display: flex;
-										margin-top: 10px;
-										margin-right: 25px;
-										flex-direction: column;
-									"
-								>
+							<div class="wrapper-input-row">
+								<div class="wrapper-input-name">
 									<label for="nome">Nome</label>
 									<input
 										readonly
@@ -203,13 +116,7 @@
 										id="nome"
 									/>
 								</div>
-								<div
-									style="
-										display: flex;
-										margin-top: 10px;
-										flex-direction: column;
-									"
-								>
+								<div class="wrapper-input">
 									<label for="data-nascimento"
 										>Data de nascimento</label
 									>
@@ -223,13 +130,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="email">Email</label>
 								<input
 									readonly
@@ -240,13 +141,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="senha">Senha</label>
 								<input
 									readonly
@@ -257,13 +152,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="sexo">Sexo</label>
 								<select name="sexo" id="sexo" readonly>
 									<option value="masculino">Masculino</option>
@@ -273,13 +162,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="tel-residencial"
 									>Telefone Residencial</label
 								>
@@ -292,13 +175,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="fumante">Fumante</label>
 								<select readonly name="fumante" id="fumante">
 									<option value="sim">Sim</option>
@@ -307,13 +184,7 @@
 							</div>
 						</li>
 						<li>
-							<div
-								style="
-									display: flex;
-									flex-direction: column;
-									margin-top: 10px;
-								"
-							>
+							<div class="wrapper-input">
 								<label for="municipioOrigem"
 									>Município de Origem</label
 								>
