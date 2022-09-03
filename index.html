@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="height: 100vh; width: 100vw; padding: 0; margin: 0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body
+		style="
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		"
+	>
+		<!-- Container geral -->
+		<div
+			style="
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				margin: 10px;
+				align-self: center;
+			"
+		>
+			<!-- Form esquerda -->
+			<div style="border: 1px solid black; padding: 20px">
+				<h2>Efetuar registros</h2>
+				<form action="#" method="post">
+					<ul>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: row;
+									align-items: center;
+								"
+							>
+								<div
+									style="
+										display: flex;
+										margin-top: 10px;
+										margin-right: 25px;
+										flex-direction: column;
+									"
+								>
+									<label for="nome">Nome</label>
+									<input type="text" name="nome" id="nome" />
+								</div>
+								<div
+									style="
+										display: flex;
+										margin-top: 10px;
+										flex-direction: column;
+									"
+								>
+									<label for="data-nascimento"
+										>Data de nascimento</label
+									>
+									<input
+										type="date"
+										name="data-nascimento"
+										id="data-nascimento"
+									/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" />
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="senha">Senha</label>
+								<input
+									type="password"
+									name="senha"
+									id="senha"
+								/>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="sexo">Sexo</label>
+								<select name="sexo" id="sexo">
+									<option value="masculino">Masculino</option>
+									<option value="feminino">Feminino</option>
+									<option value="outro">Outro</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="tel-residencial"
+									>Telefone Residencial</label
+								>
+								<input
+									type="tel"
+									name="tel-residencial"
+									id="tel-residencial"
+								/>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="fumante">Fumante</label>
+								<select name="fumante" id="fumante">
+									<option value="sim">Sim</option>
+									<option value="nao">Não</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="municipioOrigem"
+									>Município de Origem</label
+								>
+								<input
+									type="text"
+									name="municipioOrigem"
+									id="municipioOrigem"
+								/>
+							</div>
+						</li>
+					</ul>
+
+					<input type="reset" value="Cancelar" />
+					<input type="submit" value="Gravar" onsubmit="()=>null" />
+				</form>
+			</div>
+			<!-- Fim Form esquerda -->
+
+			<!-- Form direita -->
+			<div style="border: 1px solid black; padding: 20px">
+				<h2>Dados</h2>
+				<form action="" method="post">
+					<ul>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: row;
+									align-items: center;
+								"
+							>
+								<div
+									style="
+										display: flex;
+										margin-top: 10px;
+										margin-right: 25px;
+										flex-direction: column;
+									"
+								>
+									<label for="nome">Nome</label>
+									<input
+										readonly
+										type="text"
+										name="nome"
+										id="nome"
+									/>
+								</div>
+								<div
+									style="
+										display: flex;
+										margin-top: 10px;
+										flex-direction: column;
+									"
+								>
+									<label for="data-nascimento"
+										>Data de nascimento</label
+									>
+									<input
+										readonly
+										type="date"
+										name="data-nascimento"
+										id="data-nascimento"
+									/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="email">Email</label>
+								<input
+									readonly
+									type="email"
+									name="email"
+									id="email"
+								/>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="senha">Senha</label>
+								<input
+									readonly
+									type="password"
+									name="senha"
+									id="senha"
+								/>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="sexo">Sexo</label>
+								<select name="sexo" id="sexo" readonly>
+									<option value="masculino">Masculino</option>
+									<option value="feminino">Feminino</option>
+									<option value="outro">Outro</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="tel-residencial"
+									>Telefone Residencial</label
+								>
+								<input
+									readonly
+									type="tel"
+									name="tel-residencial"
+									id="tel-residencial"
+								/>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="fumante">Fumante</label>
+								<select readonly name="fumante" id="fumante">
+									<option value="sim">Sim</option>
+									<option value="nao">Não</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div
+								style="
+									display: flex;
+									flex-direction: column;
+									margin-top: 10px;
+								"
+							>
+								<label for="municipioOrigem"
+									>Município de Origem</label
+								>
+								<input
+									readonly
+									type="text"
+									name="municipioOrigem"
+									id="municipioOrigem"
+								/>
+							</div>
+						</li>
+					</ul>
+
+					<input type="reset" value="Limpar" />
+				</form>
+			</div>
+			<!-- Fim Form direita -->
+		</div>
+	</body>
+</html>
