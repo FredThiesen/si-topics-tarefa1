@@ -51,6 +51,47 @@ const limpaFormEsquerda = () => {
 	})
 }
 
+const postFormulario = async () => {
+	const dadosEsquerda = document.getElementById("form-dados-esquerda")
+
+	const requestBody = {
+		nome: dadosEsquerda[0].value,
+		dataNascimento: dadosEsquerda[1].value,
+		email: dadosEsquerda[2].value,
+		senha: dadosEsquerda[3].value,
+		sexo: dadosEsquerda[4].value,
+		telefoneResidencial: dadosEsquerda[5].value,
+		fumante: dadosEsquerda[6].value,
+		municipioOrigem: dadosEsquerda[7].value,
+	}
+	console.log("mandando post com body:", requestBody)
+
+	const response = await fetch("http://localhost:4000/", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(requestBody),
+	})
+
+	const data = await response.json()
+	console.log("resposta do post:", data)
+	populaDadosDireita(data)
+}
+
+const populaDadosDireita = (data) => {
+	const dadosDireita = document.getElementById("form-dados-direita")
+
+	dadosDireita[0].value = data.usuario.nome
+	dadosDireita[1].value = data.usuario.dataNascimento
+	dadosDireita[2].value = data.usuario.email
+	dadosDireita[3].value = data.usuario.senha
+	dadosDireita[4].value = data.usuario.sexo
+	dadosDireita[5].value = data.usuario.telefoneResidencial
+	dadosDireita[6].value = data.usuario.fumante
+	dadosDireita[7].value = data.usuario.municipioOrigem
+}
+
 document.addEventListener("click", (e) => {
 	e.preventDefault()
 
@@ -61,7 +102,8 @@ document.addEventListener("click", (e) => {
 	const isDadoReset = e.target.id == "dado-reset"
 
 	if (isSubmit) {
-		transportaDados()
+		// transportaDados()
+		postFormulario()
 	}
 
 	if (isReset) {
