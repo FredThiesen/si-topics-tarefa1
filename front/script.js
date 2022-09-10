@@ -75,7 +75,9 @@ const postFormulario = async () => {
 	})
 
 	const data = await response.json()
-	console.log("resposta do post:", data)
+	// loga as informações, menos a senha
+	console.log("resposta do post:")
+	console.log({ usuario: { ...data.usuario, senha: "**********" } })
 	populaDadosDireita(data)
 }
 
